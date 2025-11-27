@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Boutique</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #eef6ff;
+      color: #267bfa;
+    }
+    header {
+      background: linear-gradient(90deg, #7ba7ff, #305d8e);
+      text-align: center;
+      padding: 25px 0;
+      color: white;
+    }
+    nav {
+      background: #bcd9ff;
+      padding: 12px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #003060;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #0044cc;
+      text-decoration: underline;
+    }
+
+    .hero {
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+      text-shadow: 3px 3px 8px #0005;
+      background: url("https://i.pinimg.com/1200x/4c/8b/46/4c8b4662b6d96dffbb106de68405d1fd.jpg") center/cover no-repeat;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .product-card {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .product-card h3 {
+      color: #0044cc;
+    }
+
+    .about {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .about img {
+      width: 45%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px #0003;
+      min-width: 280px;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* --- DISCOUNT --- */
+    .discount-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .discount-card {
+      flex: 1;
+      min-width: 260px;
+      background: #b6d4ff;
+      border-left: 6px solid #0044cc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px #0003;
+    }
+    .discount-card h3 {
+      margin-bottom: 10px;
+      color: #002560;
+    }
+
+    form {
+      background: #0044cc;
+      padding: 25px;
+      border-radius: 15px;
+      color: white;
+    }
+    input, textarea {
+      width: 96%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+    button {
+      background: #002c80;
+      padding: 14px 25px;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #001f5c;
+    }
+
+    footer {
+      background: #002c80;
+      text-align: center;
+      padding: 18px;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cottoncloud</h1>
+    <p>Light. Soft. Effortless.</p>
+  </header>
+
+  <nav>
+    <a href="#hero">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#products">Produk</a>
+    <a href="#discount">Promo</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <section class="hero" id="hero">
+    <h1>Selamat Datang di Cottoncloud</h1>
+  </section>
+
+  <section class="container" id="about">
+    <h2 style="text-align:center;">Tentang Kami</h2>
+    <div class="about">
+      <img src="https://i.pinimg.com/736x/6e/a6/4f/6ea64f9b8904595b0b09f0d2a1440d48.jpg" />
+      <div class="about-text">
+        <p>
+          Cottoncloud hadir dengan sentuhan elegan dan modern dalam nuansa biru yang menenangkan. Kami menghadirkan pilihan pakaian dan aksesori stylish yang dirancang untuk melengkapi setiap momen spesial Anda—mulai dari tampilan kasual hingga acara formal. Dengan kualitas premium, detail yang rapi, dan desain yang estetis, Blue Boutique memastikan setiap langkah Anda dipenuhi kepercayaan diri dan pesona. Temukan gaya terbaikmu bersama kami.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="products">
+    <h2 style="text-align:center;">Produk Terbaru</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/53/c7/f1/53c7f1b1335307ef8f7e8e14dbf5505e.jpg" />
+        <h3>Blue Femme </h3>
+        <p class="product-price">Rp 149.000</p>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/1200x/a1/b7/cd/a1b7cd8a3d975fe050d7aa4ba85e61c8.jpg" />
+        <h3>Blue Homme</h3>
+        <p class="product-price">Rp 120.000</p>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/b3/5a/6e/b35a6ed373457bd955d449cad8bbdca1.jpg" />
+        <h3>Blue Boys</h3>
+        <p class="product-price">Rp 65.000</p>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/fa/99/27/fa99270b1ecbfdc733427f95fe75ba80.jpg" />
+        <h3>Blue Girls</h3>
+        <p class="product-price">Rp 75.000</p>
+    </div>
+  </section>
+
+  <section class="container" id="discount">
+    <h2 style="text-align:center;">Promo Spesial</h2>
+    <div class="discount-list">
+      <div class="discount-card">
+        <h3>Diskon 25% Femme</h3>
+        <p>Berlaku sampai akhir bulan!</p>
+      </div>
+      <div class="discount-card">
+        <h3>Beli 2 Gratis 1 Aksesoris</h3>
+        <p>Khusus pembelian offline.</p>
+      </div>
+      <div class="discount-card">
+        <h3>Diskon 30% Blue Boys</h3>
+        <p>Promo terbatas hingga stok habis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <h2 style="text-align:center;">Hubungi Kami</h2>
+    <form>
+      <label>Nama</label>
+      <input type="text" placeholder="Masukkan Nama Anda" />
+      <label>Email</label>
+      <input type="email" placeholder="Masukkan Email Anda" />
+      <label>Pesan</label>
+      <textarea rows="5" placeholder="Tulis pesan Anda"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Cottoncloud | Light. Soft. Effortless.</p>
+  </footer>
+
+</body>
+</html>
